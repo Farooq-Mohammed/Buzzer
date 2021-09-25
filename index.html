@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="#" />
+		<link rel="stylesheet" href="./style.css" />
+		<script src="./script.js" defer></script>
+		<title>Buzzer</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="buzzer">
+				<div class="time">Buzzer!!</div>
+				<div class="caution" style="opacity: 0">
+					<center>Unlock to activate the buzzer!</center>
+				</div>
+			</div>
+			<button class="check"><i class="fas fa-lock-open"></i></button>
+
+			<select name="sound-select" class="sound-select">
+				<option value="./Allsounds/Buzzer-1.mp3">Buzzer-1</option>
+				<option value="./Allsounds/Buzzer-2.wav">Buzzer-2</option>
+				<option value="./Allsounds/Buzzer-3.wav">Buzzer-3</option>
+				<option value="./Allsounds/Fart.wav">Buzzer-4</option>
+				<option value="./Allsounds/Laugh.wav">Buzzer-5</option>
+			</select>
+
+			<button class="reset"><i class="fas fa-undo"></i></button>
+			<audio class="sound" id="sound" src="./Allsounds/Buzzer-1.mp3"></audio>
+		</div>
+	</body>
+</html>
