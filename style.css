@@ -29,8 +29,11 @@ body,
 .main {
 	height: 90%;
 	width: 90%;
-	background-image: url(./bg.png);
-	background-size: cover;
+	background: linear-gradient(
+		90deg,
+		rgba(227, 255, 231, 1) 0%,
+		rgba(217, 231, 255, 1) 100%
+	);
 	position: relative;
 }
 
